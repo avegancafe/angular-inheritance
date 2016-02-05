@@ -1,0 +1,25 @@
+<h1>Phong Van Phong</h1>
+
+<div class="wrapper">
+  <div>
+    <h2>Using No Inheritance</h2>
+    <div class="left-list" ng-controller="LeftListNoInheritController">
+      <div ng-repeat="element in serviceFunction()">
+        {{element}}
+      </div>
+    </div>
+
+    <div class="right-list" ng-controller="RightListNoInheritController">
+      <div ng-repeat="element in serviceFunction()">
+        {{element}}
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Using Inheritance</h2>
+    <div class="left-list" left-list=""></div>
+    <div class="right-list" right-list=""></div>
+  </div>
+
+</div>

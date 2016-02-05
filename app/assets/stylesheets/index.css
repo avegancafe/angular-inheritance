@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+.left-list {
+  float: left;
+}
+
+.wrapper {
+  margin: auto auto;
+  width: 33%;
+}
+
+.wrapper > div {
+  overflow: auto;
+}
+
+.right-list {
+  float: right;
+}
+
