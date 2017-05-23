@@ -1,19 +1,17 @@
 {
-  "maxReviewers": 5, // Maximum  number of people to ping in the PR message, default is 3
-  "numFilesToCheck": 10, // Number of files to check against, default is 5
   "message": "@pullRequester, thanks! @reviewers, please review this.",
   "alwaysNotifyForPaths": [
     {
-      "name": "kyleholzinger", // The user's Github username
-      "files": ["package.json"], // The array of file globs associated with the user
-      "skipTeamPrs": false // mention-bot will exclude the creator's own team from mentions
+      "name": "kyleholzinger",
+      "files": ["package.json"],
+      "skipTeamPrs": false
     }
-  ], // Users will always be mentioned based on file glob
-  "findPotentialReviewers": false, // mention-bot will try to find potential reviewers based on files history, if disabled, `alwaysNotifyForPaths` is used instead
-  "actions": ["opened"], // List of PR actions that mention-bot will listen to, default is "opened"
-  "skipAlreadyMentionedPR": true, // mention-bot will ignore if there is already existing an exact mention
-  "createComment": true, // mention-bot creates a comment mentioning the reviewers for the PR
-  "delayed": false, // mention-bot will wait to comment until specified time in `delayedUntil` value
-  "delayedUntil": "3d", // Used if delayed is equal true, permitted values are: minutes, hours, or days, e.g.: '3 days', '40 minutes', '1 hour', '3d', '1h', '10m'
-  "skipCollaboratorPR": false // mention-bot will ignore if PR is made by collaborator
+  ],
+  "findPotentialReviewers": false,
+  "actions": ["opened"],
+  "skipAlreadyMentionedPR": true,
+  "createComment": true,
+  "delayed": false,
+  "delayedUntil": "3d",
+  "skipCollaboratorPR": false
 }
