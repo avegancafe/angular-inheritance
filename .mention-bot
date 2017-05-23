@@ -2,7 +2,7 @@
   "message": "@pullRequester, thanks! @reviewers, please review this.",
   "alwaysNotifyForPaths": [
     {
-      "name": "kyleholzinger",
+      "name": "viewthespace/front-end-guild",
       "files": ["package.json"],
       "skipTeamPrs": false 
     }
